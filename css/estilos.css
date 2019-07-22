@@ -14,18 +14,19 @@ body{
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
+    width:95%;
 }
 h1{
-    font-size: 4rem;
-}
-h2{
     font-size: 3.6rem;
 }
-h3{
+h2{
     font-size: 3.2rem;
 }
-h4{
+h3{
     font-size: 2.8rem;
+}
+h4{
+    font-size: 2.4rem;
 }
 img{
     max-width: 100%;
@@ -37,6 +38,18 @@ img{
 }
 .no-margin{
     margin: 0;
+}
+
+/* Botones */
+.btn{
+    display: inline-block;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #00b8b4;
+    text-decoration: none;
+    padding: 1rem 7rem;
+    margin-top: 2rem;
+    font-size: 2rem;
 }
 
 /* Header */
@@ -63,4 +76,40 @@ img{
     .navegacion-principal a:hover{
         background-color: #00b8b4;
     }
+}
+
+/* Contenido principal */
+.contenido-principal{
+    margin-top: 3rem;
+}
+@media(min-width: 768px) {
+    .contenido-principal{
+        display: flex;
+        justify-content: space-between;
+    }
+    .entradas{
+        flex-basis: calc(65% - 1rem);
+    }
+    .posts{
+        flex-basis: calc(35% - 1rem);
+        margin: 0;
+    }
+}
+.entrada, .posts{
+    margin-top: 4rem;
+}
+.entrada h2,
+.posts h2{
+    color: #00b8b4;
+    font-size: 2.4rem;
+}
+.entrada p{
+    font-size: 1.5rem;
+}
+.posts a{
+    color: #00b8b4;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: .8rem;
 }
